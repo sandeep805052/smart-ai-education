@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Basics Chatbot</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header>
+            <div class="logo">🤖 AI Basics</div>
+
+            <div class="status">
+                <span class="online-dot"></span>
+                Online Assistant
+            </div>
+        </header>
+
+        <section class="welcome">
+            <h1>Artificial Intelligence Assistant</h1>
+
+            <p>
+                Ask questions and explore the world of Artificial Intelligence.
+            </p>
+        </section>
+
+        <div class="chat-container">
+
+            <div class="chat-header">
+                <div class="bot-icon">🤖</div>
+
+                <div>
+                    <h3>AI Learning Assistant</h3>
+                    <p>Your AI educational companion</p>
+                </div>
+
+                <button id="clearBtn">Clear Chat</button>
+            </div>
+
+            <div id="chatBox" class="chat-box">
+
+                <div class="message bot">
+                    <div class="avatar">🤖</div>
+
+                    <div class="message-content">
+                        Hello! Welcome to AI Basics Chatbot.
+                        Ask me anything about Artificial Intelligence!
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="quick-questions">
+
+                <button class="quick-btn">
+                    What is AI?
+                </button>
+
+                <button class="quick-btn">
+                    What is Machine Learning?
+                </button>
+
+                <button class="quick-btn">
+                    Types of AI
+                </button>
+
+            </div>
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask something about AI..."
+                    autocomplete="off"
+                >
+
+                <button id="sendBtn">Send ➤</button>
+
+            </div>
+
+            <p class="footer-note">
+                AI Basics Educational Chatbot | BCA Internship Project
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
